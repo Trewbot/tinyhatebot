@@ -1,0 +1,52 @@
+{
+
+"if you think this bot to be abusive or otherwise unpleasant email me at"     :[
+    "hate [at] phene [dot] co"                                                ],
+"n ill work to remedy this, otherwise just remove it or whatever"           :[],
+
+
+"0":["      ORIGIN                                                           "],
+"origin"	:[ "#COM#" , "#QUE#" , "#STA#"                                    ],
+
+
+"1":["      UTTERANCES                                                       "],
+"COM"       :[ "#P# #OD:CL#"                                                  ],
+"QUE"       :[ "#P_# #S# #_P# #CS:ADJ#?"                                      ],
+"STA"       :[ "#S# #P_# #_P# #OD# #A:G#"                                     ],
+
+"2":["      PREDECATORS                                                      "],
+"P"         :[ "#P:V#" , "#P:G#"                                              ],
+"P:G"       :[ "#D:INFM# #H:V#"                                               ],
+"P_"        :[ "#ADV# #P_#" , "#P_# #ADV#" , "#D:V#"                          ],
+"_P"        :[ "#H:V#"                                                        ],
+"P:V"       :[ "acknowledge" , "despise" , "remember"                         ],
+
+"3":["      SUBJECTS                                                         "],
+"S"         :[ "#PRON#"                                                       ],
+
+"4":["      OBJECTS                                                          "],
+"OD"        :[ "#OD:CL#" , "#OD:G#"                                           ],
+"OD:CL"     :[ "#P# #OD#"                                                     ],
+"OD:G"      :[ "#D:ART# #H:N#"                                                ],
+
+"5":["      DEPENDENTS                                                       "],
+"D:ART"     :[ "the"                                                          ],
+"D:INFM"    :[ "to"                                                           ],
+"D:PRON"    :[ "this"                                                         ],
+"D:V"       :[ "#ADV# #D:V#" , "will"                                         ],
+
+"6":["      HEADS                                                            "],
+"H:N"       :[ "#H:N# #EMOJI#" , "void" , "way"                               ],
+"H:V"       :[ "#ADV# #H:V#" , "admire" , "be"                                ],
+
+"PRON"      :[ "you" , "she" , "he" , "they"                                  ],
+
+"7":["      ADVERBIALS                                                       "],
+"A:G"       :[ "#D:PRON# #H:N#"                                               ],
+"ADV"       :[ "ever"                                                         ],
+
+"CS:ADJ"    :[ "happy"                                                        ],
+
+"EMOJI"     :[ "🖤" , "⬛" , "⚫" , "🥀" ]
+
+}

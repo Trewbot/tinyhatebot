@@ -1,8 +1,16 @@
+/*
+ *	tinyhatebot
+ *	Written by Trewbot
+ *	2017.07.15
+ *
+ *	Original script from https://github.com/v21/tracerybot
+ */
+
 const tracery    = require('tracery-grammar'),
       grammar    = tracery.createGrammar(require('./grammar.json'));
 grammar.addModifiers(tracery.baseEngModifiers);
 
-var tweet = processedGrammar.flatten("#origin#");
+var tweet = grammar.flatten("#origin#");
 console.log(tweet);
 
 /*
