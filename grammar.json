@@ -10,7 +10,7 @@
 
 
 "1":["      UTTERANCES                                                       "],
-"COM"       :[ "#P# #OD#"                                                     ],
+"COM"       :[ "#P:V# #OD#"                                                   ],
 "QUE"       :[ "#P_# #S# be #CS:ADJ#" , "#P_# #S# #_P# #OD:G#"                ],
 "STA"       :[ "#S# #P:V#s #A:G#" , "#S# #P# #OD:G# #A:ADV#" ,
                "#S# #P# #OD:G#"                                               ],
@@ -33,13 +33,13 @@
 "5":["      DEPENDENTS                                                       "],
 "D:ART"     :[ "the"                                                          ],
 "D:INFM"    :[ "to"                                                           ],
-"D:PRON"    :[ "this"                                                         ],
+"D:PRON"    :[ "this" , "your" , "her" , "his" , "their"                      ],
 "D:V"       :[ "will" , "should" , "does"                                     ],
 
 "6":["      HEADS                                                            "],
-"H:N"       :[ "#H:N# #EMOJI#" , "#N#" , "void" , "way"                       ],
+"H:N"       :[ "#H:N# #VOID#" , "#N#" , "void" , "way"                        ],
 "H:V"       :[ "#ADV# #H:V#" , "acknowledge" , "admire" , "appreciate" , "be" ,
-               "enjoy" , "love"                                               ],
+               "enjoy" , "love" , "#H:V# #LOVE#"                              ],
 
 "7":["      NOUNS                                                            "],
 "N"         :[ "emptiness", "happiness" , "loneliness" , "sadness"            ],
@@ -51,9 +51,11 @@
 "ADV"       :[ "ever" , "never" , "really"                                    ],
 
 "9":["      COMPLEMENTS                                                      "],
-"CS:ADJ"    :[ "happy"                                                        ],
+"CS:ADJ"    :[ "#CS:ADJ# #LOVE#" , "happy"                                    ],
 "CS:N"      :[ "fun"                                                          ],
 
-"EMOJI"     :[ "🖤" , "⬛" , "⚫" , "🥀"                                        ]
+"10":["    EMOJIS                                                            "],
+"VOID"     :[ "🖤" , "⬛" , "⚫" , "🥀"                                        ],
+"LOVE"     :[ "💔" , "❣️" , "💟" , "💕" , "😍" , "😘" , "💋" , "😙" ,"😳"  ]
 
 }
