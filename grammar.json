@@ -23,7 +23,7 @@
 "P:V"       :[ "remember"                                                     ],
 
 "3":["      SUBJECTS                                                         "],
-"S"         :[ "#PRON#"                                                       ],
+"S"         :[ "#N#" , "#PRON#"                                               ],
 
 "4":["      OBJECTS                                                          "],
 "OD"        :[ "#OD:CL#" , "#OD:G#"                                           ],
@@ -42,7 +42,7 @@
                "enjoy" , "love" , "#H:V# #LOVE#"                              ],
 
 "7":["      NOUNS                                                            "],
-"N"         :[ "emptiness", "happiness" , "loneliness" , "sadness"            ],
+"N"         :[ "death" , "emptiness", "happiness" , "loneliness" , "sadness"  ],
 "PRON"      :[ "you" , "she" , "he" , "they", "nothing"                       ],
 
 "8":["      ADVERBIALS                                                       "],
@@ -51,7 +51,7 @@
 "ADV"       :[ "ever" , "never" , "really"                                    ],
 
 "9":["      COMPLEMENTS                                                      "],
-"CS:ADJ"    :[ "#CS:ADJ# #LOVE#" , "happy"                                    ],
+"CS:ADJ"    :[ "#CS:ADJ# #LOVE#" , "happy" , "fake"                           ],
 "CS:N"      :[ "fun"                                                          ],
 
 "10":["    EMOJIS                                                            "],
