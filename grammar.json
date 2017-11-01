@@ -13,14 +13,14 @@
 "COM"       :[ "#P:V# #OD#"                                                   ],
 "QUE"       :[ "#P_# #S# be #CS:ADJ#" , "#P_# #S# #_P# #OD:G#"                ],
 "STA"       :[ "#S# #P:V#s #A:G#" , "#S# #P# #OD:G# #A:ADV#" ,
-               "#S# #P# #OD:G#"                                               ],
+               "#S# #P# #OD:G#" , "#STA#, #A:CL#" , "#S# #P# #A:ADV# #CS:N#"  ],
 
 "2":["      PREDICATORS                                                      "],
 "P"         :[ "#P:V#" , "#P:G#"                                              ],
 "P:G"       :[ "#D:INFM# #H:V#"                                               ],
 "P_"        :[ "#D:V#"                                                        ],
 "_P"        :[ "#H:V#" , "#ADV# #H:V#" , "#H:V#" , "#H:V#" , "#H:V#"          ],
-"P:V"       :[ "remember"                                                     ],
+"P:V"       :[ "remember" , "want" , "forget"                                 ],
 
 "3":["      SUBJECTS                                                         "],
 "S"         :[ "#N#" , "#PRON#"                                               ],
@@ -28,10 +28,10 @@
 "4":["      OBJECTS                                                          "],
 "OD"        :[ "#OD:CL#" , "#OD:G#"                                           ],
 "OD:CL"     :[ "#P:G# #OD:G#"                                                 ],
-"OD:G"      :[ "#D:ART# #H:N#" , "#N#"                                        ],
+"OD:G"      :[ "#D:ART# #H:N#" , "#N#" , "#D:INFM# #H:V#"                     ],
 
 "5":["      DEPENDENTS                                                       "],
-"D:ART"     :[ "the"                                                          ],
+"D:ART"     :[ "the" , "a"                                                    ],
 "D:INFM"    :[ "to"                                                           ],
 "D:PRON"    :[ "this" , "your" , "her" , "his" , "their"                      ],
 "D:V"       :[ "will" , "should" , "does"                                     ],
@@ -39,7 +39,8 @@
 "6":["      HEADS                                                            "],
 "H:N"       :[ "#H:N# #VOID#" , "#N#" , "#N#" , "#N#" , "void" , "way"        ],
 "H:V"       :[ "#ADV# #H:V#" , "#H:V# #LOVE#" , "acknowledge" , "admire" ,
-               "appreciate" , "be" , "enjoy" , "love" , "ignore" , "despise"  ],
+               "appreciate" , "be" , "enjoy" , "love" , "ignore" , "despise" ,
+               "die"                                                          ],
 
 "7":["      NOUNS                                                            "],
 "N"         :[ "#CS:ADJ# #N#" , "death" , "emptiness", "happiness" ,
@@ -48,7 +49,8 @@
 
 "8":["      ADVERBIALS                                                       "],
 "A:G"       :[ "#D:PRON# #H:N#"                                               ],
-"A:ADV"     :[ "#ADV#" , "anymore"                                            ],
+"A:CL"      :[ "#P:G# #CS:ADJ#"                                               ],
+"A:ADV"     :[ "#ADV#" , "anymore" , "not"                                    ],
 "ADV"       :[ "ever" , "never" , "really"                                    ],
 
 "9":["      COMPLEMENTS                                                      "],
