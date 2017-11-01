@@ -15,10 +15,10 @@
 "STA"       :[ "#S# #P:V#s #A:G#" , "#S# #P# #OD:G# #A:ADV#" ,
                "#S# #P# #OD:G#"                                               ],
 
-"2":["      PREDECATORS                                                      "],
+"2":["      PREDICATORS                                                      "],
 "P"         :[ "#P:V#" , "#P:G#"                                              ],
 "P:G"       :[ "#D:INFM# #H:V#"                                               ],
-"P_"        :[ "#D:V#" , "#D:V# #ADV#" , "#D:V#" , "#D:V#" , "#D:V#"          ],
+"P_"        :[ "#D:V#"                                                        ],
 "_P"        :[ "#H:V#" , "#ADV# #H:V#" , "#H:V#" , "#H:V#" , "#H:V#"          ],
 "P:V"       :[ "remember"                                                     ],
 
@@ -37,12 +37,13 @@
 "D:V"       :[ "will" , "should" , "does"                                     ],
 
 "6":["      HEADS                                                            "],
-"H:N"       :[ "#H:N# #VOID#" , "#N#" , "void" , "way"                        ],
-"H:V"       :[ "#ADV# #H:V#" , "acknowledge" , "admire" , "appreciate" , "be" ,
-               "enjoy" , "love" , "#H:V# #LOVE#"                              ],
+"H:N"       :[ "#H:N# #VOID#" , "#N#" , "#N#" , "#N#" , "void" , "way"        ],
+"H:V"       :[ "#ADV# #H:V#" , "#H:V# #LOVE#" , "acknowledge" , "admire" ,
+               "appreciate" , "be" , "enjoy" , "love" , "ignore" , "despise"  ],
 
 "7":["      NOUNS                                                            "],
-"N"         :[ "death" , "emptiness", "happiness" , "loneliness" , "sadness"  ],
+"N"         :[ "#CS:ADJ# #N#" , "death" , "emptiness", "happiness" ,
+               "loneliness" , "sadness" , "meaning" , "melancholy"            ],
 "PRON"      :[ "you" , "she" , "he" , "they", "nothing"                       ],
 
 "8":["      ADVERBIALS                                                       "],
@@ -51,11 +52,12 @@
 "ADV"       :[ "ever" , "never" , "really"                                    ],
 
 "9":["      COMPLEMENTS                                                      "],
-"CS:ADJ"    :[ "#CS:ADJ# #LOVE#" , "happy" , "fake"                           ],
+"CS:ADJ"    :[ "#CS:ADJ# #LOVE#" , "happy" , "sad" , "fake" , "real" , "ominous"
+                                                                              ],
 "CS:N"      :[ "fun"                                                          ],
 
 "10":["    EMOJIS                                                            "],
-"VOID"     :[ "🖤" , "⬛" , "⚫" , "🥀"                                        ],
+"VOID"     :[ "🖤" , "⬛" , "⚫" , "🥀"                                      ],
 "LOVE"     :[ "💔" , "❣️" , "💟" , "💕" , "😍" , "😘" , "💋" , "😙" ,"😳"  ]
 
 }
