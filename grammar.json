@@ -2,12 +2,13 @@
 
 "if you think this bot to be abusive or otherwise unpleasant email me at"     :[
     "hate [at] phene [dot] co"                                                ],
-"n ill work to remedy this, otherwise just remove it or whatever"           :[],
-
+"n ill work to remedy this, otherwise just remove it or whatever."          :[],
+"for explanation of abbreviations see"                                        :[
+    "http://visl.sdu.dk/visl/en/info/engsymbol.html"
+                                                                              ],
 
 "0":["      ORIGIN                                                           "],
 "origin"    :[ "#COM#" , "#QUE#?" , "#STA#"                                   ],
-
 
 "1":["      UTTERANCES                                                       "],
 "COM"       :[ "#P:V# #OD#" , "#P:V# #OD#" , "#P:V# #OD#" , "#P:V# #OD#" ,
