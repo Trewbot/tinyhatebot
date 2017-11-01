@@ -11,7 +11,7 @@
 
 "1":["      UTTERANCES                                                       "],
 "COM"       :[ "#P:V# #OD#" , "#P:V# #OD#" , "#P:V# #OD#" , "#P:V# #OD#" ,
-               "#P:V# #OD#" , "COM:V"                                         ],
+               "#P:V# #OD#" , "#COM:V#"                                       ],
 "QUE"       :[ "#P_# #S# be #CS:ADJ#" , "#P_# #S# #_P# #OD:G#"                ],
 "STA"       :[ "#S# #P:V#s #A:G#" , "#S# #P# #OD:G# #A:ADV#" ,
                "#S# #P# #OD:G#" , "#STA#, #A:CL#" , "#S# #P# #A:ADV# #CS:N#"  ],
