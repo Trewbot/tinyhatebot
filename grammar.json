@@ -15,17 +15,18 @@
                "#P:V# #OD#" , "#COM:V#"                                       ],
 "QUE"       :[ "#P_# #S# be #CS:ADJ#" , "#P_# #S# #_P# #OD:G#"                ],
 "STA"       :[ "#S# #P:V#s #A:G#" , "#S# #P# #OD:G# #A:ADV#" ,
-               "#S# #P# #OD:G#" , "#STA#, #A:CL#" , "#S# #P# #A:ADV# #CS:N#"  ],
+               "#S# #P# #OD:G#" , "#STA#, #A:CL#" , "#S# #P# #A:ADV# #CS:N#" ,
+               "#S# #P_# #A:ADV# #_P# #A:CL#"                                 ],
 
 "2":["      PREDICATORS                                                      "],
 "P"         :[ "#P:V#" , "#P:G#"                                              ],
 "P:G"       :[ "#D:INFM# #H:V#"                                               ],
 "P_"        :[ "#D:V#"                                                        ],
 "_P"        :[ "#H:V#" , "#ADV# #H:V#" , "#H:V#" , "#H:V#" , "#H:V#"          ],
-"P:V"       :[ "remember" , "want" , "forget"                                 ],
+"P:V"       :[ "remember" , "want" , "forget" , "wash" , "m" , "let"          ],
 
 "3":["      SUBJECTS                                                         "],
-"S"         :[ "#N#" , "#PRON#"                                               ],
+"S"         :[ "#N#" , "#PRON#" , "i"                                         ],
 
 "4":["      OBJECTS                                                          "],
 "OD"        :[ "#OD:CL#" , "#OD:G#"                                           ],
@@ -42,28 +43,33 @@
 "H:N"       :[ "#H:N# #VOID#" , "#N#" , "#N#" , "#N#" , "void" , "way"        ],
 "H:V"       :[ "#ADV# #H:V#" , "#H:V# #LOVE#" , "acknowledge" , "admire" ,
                "appreciate" , "be" , "enjoy" , "love" , "ignore" , "despise" ,
-               "die"                                                          ],
+               "die" , "meditate" , "think"                                   ],
+"H:PRP"     :[ "over"                                                         ],
 
 "7":["      NOUNS                                                            "],
 "N"         :[ "#CS:ADJ# #N#" , "death" , "emptiness", "happiness" , "anime" ,
-               "loneliness" , "sadness" , "meaning" , "melancholy"            ],
-"PRON"      :[ "you" , "she" , "he" , "they", "nothing"                       ],
+               "loneliness" , "sadness" , "meaning" , "melancholy" , "feelings"
+               , "god"                                                        ],
+"PRON"      :[ "u" , "she" , "he" , "they" , "nothing"                        ],
 
 "8":["      ADVERBIALS                                                       "],
 "A:G"       :[ "#D:PRON# #H:N#"                                               ],
-"A:CL"      :[ "#P:G# #CS:ADJ#"                                               ],
+"A:CL"      :[ "#P:G# #CS:ADJ#" , "#SUB:CONJ# #S# #P:V# #CS:ADJ#"             ],
 "A:ADV"     :[ "#ADV#" , "anymore" , "not"                                    ],
 "ADV"       :[ "ever" , "never" , "really"                                    ],
 
 "9":["      COMPLEMENTS                                                      "],
 "CS:ADJ"    :[ "#CS:ADJ# #LOVE#" , "happy" , "sad" , "fake" , "real" , "ominous"
-                                                                              ],
+               , "alive" , "afraid" , "tired" , "scared"                      ],
 "CS:N"      :[ "fun"                                                          ],
 
 "10":["     VERBS                                                            "],
 "COM:V"     :[ "run" , "hide" , "stop"                                        ],
 
-"11":["    EMOJIS                                                            "],
+"11":["     SUBORDINATES                                                     "],
+"SUB:CONJ"  :[ "like" , "because" , "that" , "after"                          ],
+
+"12":["    EMOJIS                                                            "],
 "VOID"     :[ "🖤" , "⬛" , "⚫" , "🥀"                                      ],
 "LOVE"     :[ "💔" , "❣️" , "💟" , "💕" , "😍" , "😘" , "💋" , "😙" ,"😳"  ]
 
