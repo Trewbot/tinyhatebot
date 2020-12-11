@@ -1,87 +1,75 @@
 {
 
-"if you think this bot to be abusive or otherwise unpleasant email me at"     :[
-    "hate [at] phene [dot] co"                                                ],
-"n ill work to remedy this, otherwise just remove it or whatever."          :[],
-"for explanation of abbreviations see"                                        :[
-    "http://visl.sdu.dk/visl/en/info/engsymbol.html"
-                                                                              ],
+"0":[" ORIGIN "],
+"origin": [
+    "#[#setPronouns#]QUE#?",
+    "#[#setPronouns#]STA#.",
+    "#[#setPronouns#]STA#, lol.",
+    "#[#setPronouns#]COM#!",
+    "#[#setPronouns#]COM#."
+],
 
-"0":["      ORIGIN                                                           "],
-"origin"    :[ "#COM#" , "#QUE#?" , "#STA#"                                   ],
+"1":[" UTTERANCES "],
+"COM": [
+    "#V:TRA.capitalize# #O:N#",
+    "#V:INT.capitalize#"
+],
+"QUE": [
+    "#V:AUX.capitalize# #S:N# #V:INT#",
+    "#V:AUX.capitalize# #S:N# #V:TRA# #O:N#"
+],
+"STA": [
+    "#S:N.capitalize# #V:AUX# #V:INT#",
+    "#S:N.capitalize# #V:AUX# #V:INT# #PREP# #O:N#",
+    "#S:N.capitalize# #V:AUX# #V:TRA# #O:N#"
+],
+"setPronouns": [
+    "[P_NOM:I][P_OBJ:me][P_POSS:my][P_IPOSS:mine][P_REF:myself][#setDoPlur#]",
+    "[P_NOM:you][P_OBJ:you][P_POSS:your][P_IPOSS:yours][P_REF:yourself][#setDoPlur#]",
+    "[P_NOM:it][P_OBJ:it][P_POSS:its][P_IPOSS:its][P_REF:itself][#setDoSing#]",
+    "[P_NOM:she][P_OBJ:her][P_POSS:her][P_IPOSS:hers][P_REF:herself][#setDoSing#]",
+    "[P_NOM:he][P_OBJ:him][P_POSS:his][P_IPOSS:his][P_REF:himself][#setDoSing#]",
+    "[P_NOM:they][P_OBJ:them][P_POSS:their][P_IPOSS:theirs][P_REF:themself][#setDoPlur#]",
+    "[P_NOM:e][P_OBJ:em][P_POSS:es][P_IPOSS:es][P_REF:emself][#setDoSing#]",
+    "[P_NOM:ve][P_OBJ:vem][P_POSS:vir][P_IPOSS:virs][P_REF:vemself][#setDoSing#]"
+],
 
-"1":["      UTTERANCES                                                       "],
-"COM"       :[ "#P:V# #OD#" , "#P:V# #OD#" , "#P:V# #OD#" , "#P:V# #OD#" ,
-               "#P:V# #OD#" , "#COM:V#"                                       ],
-"QUE"       :[ "#P_# #S# be #CS:ADJ#" , "#P_# #S# #_P# #OD:G#" ,
-               "#OD:PRON# #P:V# #S# #A:CL#"                                   ],
-"STA"       :[ "#S# #P:V#s #A:G#" , "#S# #P# #OD:G# #A:ADV#" ,
-               "#S# #P# #OD:G#" , "#STA#, #A:CL#" , "#S# #P# #A:ADV# #CS:N#" ,
-               "#S# #P_# #A:ADV# #_P# #A:CL#" ,
-               "#S# #P_# #A:ADV# #_P# #OD:PRON# #A:CL#"                       ],
+"2":[" SUBJECTS "],
+"S:N": [
+    "#P_NOM#"
+],
 
-"2":["      PREDICATORS                                                      "],
-"P"         :[ "#P:V#" , "#P:G#"                                              ],
-"P:G"       :[ "#D:INFM# #H:V#"                                               ],
-"P_"        :[ "#D:V#"                                                        ],
-"_P"        :[ "#H:V#" , "#ADV# #H:V#" , "#H:V#" , "#H:V#" , "#H:V#"          ],
-"P:V"       :[ "remember" , "want" , "forget" , "wash" , "am" , "let" , "do" ,
-               "change"                                                       ],
+"3":[" VERBS "],
+"V:AUX": [
+    "#V:MOD#", "#DO#"
+],
+"V:INT": [
+    "care", "remember"
+],
+"V:MOD": [
+    "can", "can't",
+    "may", "might",
+    "should", "shouldn't"
+],
+"V:TRA": [
+    "acknowledge", "admire", "despise", "ignore", "love", "hate"
+],
+"setDoPlur": [
+    "[DO:do]", "[DO:don't]"
+],
+"setDoSing": [
+    "[DO:does]", "[DO:doesn't]"
+],
 
-"3":["      SUBJECTS                                                         "],
-"S"         :[ "#N#" , "#PRON#" , "i"                                         ],
+"4":[" OBJECTS "],
+"O:N": [
+    "#P_REF#", "#[#setPronouns#]P_OBJ#",
+    "anime"
+],
 
-"4":["      OBJECTS                                                          "],
-"OD"        :[ "#OD:CL#" , "#OD:G#"                                           ],
-"OD:CL"     :[ "#P:G# #OD:G#"                                                 ],
-"OD:G"      :[ "#D:ART# #H:N#" , "#N#" , "#D:INFM# #H:V#"                     ],
-"OD:G_"     :[ "#D:ART#"                                                      ],
-"_OD:G"     :[ "#H:N#"                                                        ],
-"OD:PRON"   :[ "it" , "her" , "him" , "them" , "me" , "who"                   ],
-
-"5":["      DEPENDENTS                                                       "],
-"D:ART"     :[ "the" , "a"                                                    ],
-"D:INFM"    :[ "to" , "wanna"                                                 ],
-"D:PRON"    :[ "this" , "your" , "her" , "his" , "their" , "my"               ],
-"D:V"       :[ "will" , "should" , "does"                                     ],
-
-"6":["      HEADS                                                            "],
-"H:N"       :[ "#H:N# #VOID#" , "#N#" , "#N#" , "#N#" , "void" , "way" ,
-               "whip"                                                         ],
-"H:V"       :[ "#ADV# #H:V#" , "#H:V# #LOVE#" , "acknowledge" , "admire" ,
-               "appreciate" , "be" , "enjoy" , "love" , "ignore" , "despise" ,
-               "die" , "meditate" , "think" , "let"                           ],
-"H:PRP"     :[ "over"                                                         ],
-
-"7":["      NOUNS                                                            "],
-"N"         :[ "#CS:ADJ# #N#" , "death" , "emptiness", "happiness" , "anime" ,
-               "loneliness" , "sadness" , "meaning" , "melancholy" , "feelings"
-               , "god" , "eternity"                                           ],
-"PRON"      :[ "u" , "she" , "he" , "they" , "nothing"                        ],
-
-"8":["      ADVERBIALS                                                       "],
-"A:G"       :[ "#D:PRON# #H:N#"                                               ],
-"A:CL"      :[ "#P:G# #CS:ADJ#" , "#SUB:CONJ# #S# #P:V# #CS:ADJ#" ,
-               "#P:V# #OD:PRON#" , "#P:G# #A:ADV#"                            ],
-"A:ADV"     :[ "#ADV#" , "anymore" , "not"                                    ],
-"ADV"       :[ "ever" , "never" , "really"                                    ],
-
-"9":["      COMPLEMENTS                                                      "],
-"CS:ADJ"    :[ "#CS:ADJ# #LOVE#" , "happy" , "sad" , "fake" , "real" , "ominous"
-               , "alive" , "afraid" , "tired" , "scared" , "human"            ],
-"CS:N"      :[ "fun"                                                          ],
-
-"10":["     VERBS                                                            "],
-"COM:V"     :[ "run" , "hide" , "stop"                                        ],
-
-"11":["     SUBORDINATES                                                     "],
-"SUB:CONJ"  :[ "like" , "because" , "that" , "after"                          ],
-
-"12":["     CONJUNCTIONS                                                     "],
-"CJT:X"     :[ "#OD:G_# #P:V# #A:ADV# #_OD:G#"                                ],
-
-"13":["    EMOJIS                                                            "],
-"VOID"     :[ "🖤" , "⬛" , "⚫" , "🥀"                                      ],
-"LOVE"     :[ "💔" , "❣️" , "💟" , "💕" , "😍" , "😘" , "💋" , "😙" ,"😳"  ]
+"5":[" PREPOSITIONS "],
+"PREP": [
+    "about"
+]
 
 }
